@@ -1,0 +1,68 @@
+/** Reminder: This is a SASS Focused Stylesheet **/
+/** SASS Exclusive Functions **/
+$site_theme:(
+    color1:#161730,
+    color2:#59587a,
+    color3:#efdd3c,
+    color4:#ffffff
+);
+@function set_color($e){
+    @return map-get($site_theme, $e);
+}
+
+/** Global Style Properties **/
+@font-face{
+    font-family:'Open_Sans-Regular';
+    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf')  format('truetype');
+}
+@font-face{
+    font-family: 'Open_Sans-Bold';
+    src: url(../fonts/Open_Sans/OpenSans-ExtraBold.ttf)  format('truetype');
+}
+html{
+    scroll-behavior: smooth;
+}
+html, body{
+    background: set_color(color1);
+    color:set_color(color1);
+    font-family: 'Open_Sans-Regular';
+}
+
+a{
+    text-decoration:none;
+}
+h1{
+    font-family: 'Open_Sans-Bold';
+}
+
+/** Specified Style Properties **/
+header, section.hero{
+    background: set_color(color3);
+}
+header{
+    nav{
+        a.nav-link{
+            font-family:'Open_Sans-Bold';
+            color:set_color(color1) !important;
+        }
+    }
+}
+section.hero{
+    div.hero_footer{
+        background-image: url('../img/svg/hero_footer_design.svg ');
+        height: 130px;
+        width: 100%;     
+    }
+}
+section.f-proj{
+    h1{
+        color: set_color(color3);
+    }
+    h5{
+        font-family: 'Open_Sans-Bold';
+    }
+}
+footer.site_footer{
+    background:set_color(color1);
+    color:set_color(color4);
+}

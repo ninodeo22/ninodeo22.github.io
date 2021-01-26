@@ -1,0 +1,60 @@
+/** Reminder: This is a SASS Focused Stylesheet **/
+/** SASS Exclusive Functions **/
+/** Global Style Properties **/
+@font-face {
+  font-family: 'Open_Sans-Regular';
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Open_Sans-Bold';
+  src: url(../fonts/Open_Sans/OpenSans-ExtraBold.ttf) format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  background: #161730;
+  color: #161730;
+  font-family: 'Open_Sans-Regular';
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Open_Sans-Bold';
+}
+
+/** Specified Style Properties **/
+header, section.hero {
+  background: #efdd3c;
+}
+
+header nav a.nav-link {
+  font-family: 'Open_Sans-Bold';
+  color: #161730 !important;
+}
+
+section.hero div.hero_footer {
+  background-image: url("../img/svg/hero_footer_design.svg ");
+  height: 130px;
+  width: 100%;
+}
+
+section.f-proj h1 {
+  color: #efdd3c;
+}
+
+section.f-proj h5 {
+  font-family: 'Open_Sans-Bold';
+}
+
+footer.site_footer {
+  background: #161730;
+  color: #ffffff;
+}
+/*# sourceMappingURL=local_style.css.map */
